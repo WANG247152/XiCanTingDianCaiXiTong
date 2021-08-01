@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- 布局方式 -->
+    <style type="text/css">
+        .show-grid [class ^="col-lg-9"] {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            /*background-color: #eee;*/
+            /*border: 1px solid #ddd;*/
+            /*background-color: rgba(86, 61, 124, .15);*/
+            /*border: 1px solid rgba(86, 61, 124, .2);*/
+        }
+        .show-grid [class ^="col-lg-3"] {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            /*background-color: #eee;*/
+            /*border: 1px solid #ddd;*/
+            /*background-color: rgba(86, 61, 124, .15);*/
+            /*border: 1px solid rgba(86, 61, 124, .2);*/
+        }
+        .text1{
+            margin-top: 70px;
+            margin-bottom: 10px;
+        }
+        ul.nav-tabs{
+            width: 140px;
+            margin-top: 20px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+        }
+        ul.nav-tabs li{
+            margin: 0;
+            border-top: 1px solid #ddd;
+        }
+        ul.nav-tabs li:first-child{
+            border-top: none;
+        }
+        ul.nav-tabs li a{
+            margin: 0;
+            padding: 8px 16px;
+            border-radius: 0;
+        }
+        ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+            color: #fff;
+            background: #0088cc;
+            border: 1px solid #0088cc;
+        }
+        ul.nav-tabs li:first-child a{
+            border-radius: 4px 4px 0 0;
+        }
+        ul.nav-tabs li:last-child a{
+            border-radius: 0 0 4px 4px;
+        }
+        ul.nav-tabs.affix{
+            top: 30px; /* Set the top position of pinned element */
+        }
+        p{
+            font-size: 125%;
+        }
+    </style>
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>国外景区</title>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+<div class="container-fluid show-grid" role="main">
+    <!-- 导航栏 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="bs-example" data-example-id="default-navbar">
+                <nav class="navbar navbar-default navbar-fixed-top" style="background: #0f0f0f">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">切换导航</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="../images/logo.png">
+                                <span lang=EN-US style='font-size:42.0pt;font-family:"Bauhaus 93";mso-fareast-font-family:黑体;mso-bidi-font-family:"Bauhaus 93";color:#C00000'>F</span>
+                                <span lang=EN-US style='font-size:26.0pt;font-family:"Showcard Gothic";mso-fareast-font-family:黑体;mso-bidi-font-family:"Showcard Gothic";color:#7030A0'>e</span>
+                                <span lang=EN-US style='font-size:26.0pt;font-family:"Showcard Gothic";mso-fareast-font-family:黑体;mso-bidi-font-family:"Showcard Gothic";color:#00B050'>e</span>
+                                <span lang=EN-US style='font-size:42.0pt;font-family:"Kristen ITC";mso-fareast-font-family:黑体;mso-bidi-font-family:"Kristen ITC";color:#0070C0'>l</span>
+                            </a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../YeMian/ShouYe.html">首页</a></li>
+                                <li><a href="../YeMian/GuoNei.html">国内</a></li>
+                                <li><a href="../YeMian/OuZhou.html">国外</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">景区分类<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">AAAAA级</a></li>
+                                        <li><a href="#">AAAA级</a></li>
+                                        <li><a href="#">AAA级</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="../YeMian/information.html">关于我们</a></li>
+                                <li><a href="../YeMian/DengLu.html">登陆</a></li>
+                                <li><a href="../YeMian/ZhuCe.html">注册</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="carousel-inner" role="listbox">
+                <img src="../images/巴黎圣母院.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="container theme-showcase" role="main">
+        <div class="row text1">
+            <div class="col-lg-2" id="myScrollspy">
+                <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125"><!-- data-spy表示固定位置，data-offset-top设置距离顶部间距 -->
+                    <li class="active"><a href="#普罗旺斯">普罗旺斯</a></li>
+                    <li><a href="#巴厘岛">巴厘岛</a></li>
+                    <li><a href="#富士山">富士山</a></li>
+                    <li><a href="#金三角">金三角</a></li>
+					<li><a href="#美国大峡谷">美国大峡谷</a></li>
+					<li><a href="#巴黎埃菲尔铁塔">巴黎埃菲尔铁塔</a></li>
+					<li><a href="#尼亚加拉大瀑布">尼亚加拉大瀑布</a></li>
+					<li><a href="#东非大裂谷">东非大裂谷</a></li>
+					<li><a href="#塞纳河">塞纳河</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-10">
+                <h2 id="普罗旺斯">普罗旺斯</h2>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div >
+                            <div class="carousel-inner" role="listbox">
+                                <img src="../images/pw.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <p>
+                              普罗旺斯（Provence），位于法国东南部，是一个濒临地中海的蓝色海岸，薰衣草的故乡。该地出产优质的葡萄酒。
+                            普罗旺斯是一座“骑士之城”，也是中世纪骑士抒情诗的发源地，著名的城市有马赛和艾克斯等。
+                            普罗旺斯和意大利接壤，是从地中海沿岸延伸到内陆的丘陵地带。中间有大河隆河流过。从阿尔卑斯山经里昂南流的罗讷河，在普罗旺斯附近分为两大支流，然后注入地中海。
+                            普罗旺斯是世界闻名的薰衣草故乡，并出产优质葡萄酒。普罗旺斯还是欧洲的“骑士之城”，是中世纪重要文学体裁骑士抒情诗的发源地。
+                            普罗旺斯境内有艾克斯、马赛等名城，还有阿尔勒、葛德、阿维尼翁（又译亚维农）、尼姆等市镇组成。此地区物产丰饶、阳光明媚、风景优美，从古希腊、古罗马时代起就吸引着无数游人，至今依然是旅游胜地。
+                         </p>
+                    </div>
+                </div>
+                <hr>
+                <h2 id="巴厘岛">巴厘岛</h2>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="thumbnail">
+                            <img src="../images/巴厘岛3.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <p>  巴厘岛（Bali Island），印度尼西亚岛屿，位于爪哇岛东部，面积5620平方公里，岛上热带植被茂密，是举世闻名的旅游岛。<p>
+						<p>  巴厘岛上大部分为山地，全岛山脉纵横，地势东高西低，岛上最高峰是阿贡火山海拔3142米，巴厘岛是印度尼西亚唯一信奉印度教的地区，80%的人信奉印度教，当地的语言是巴厘语，也通行印尼语和英语，由于巴厘岛万种风情，景物甚为绮丽，因此它还享有多种别称，如“神明之岛”、“恶魔之岛”、“罗曼斯岛”、“绮丽之岛”、“天堂之岛”、“魔幻之岛”、“花之岛”等，2015年由美国著名旅游杂志《旅游+休闲》一项调查结果把印尼巴厘岛评为世界上最佳的岛屿之一。<p>
+                        
+                    </div>
+                </div>
+                <hr>
+                <h2 id="富士山">富士山</h2>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="thumbnail">
+                            <img src="../images/富士山1.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <p>富士山（日语：ふじさん；英语：Mount Fuji），位于本州岛中南部，东距东京约80千米，跨越在日本静冈县与山梨县之间，山麓位于骏河湾至系鱼川之间的大地沟地带上。高达3775.63米，山底周长125千米，占地面积约1200平方千米。
+富士山是日本精神、文化的经典象征之一，在日本人的心中是一座蕴含着自然魅力，优美、庄严的神山。自古以来一直是日本文学者讴歌的主题，同时也是日本人崇敬的圣地，是日本民俗宗教的一部分。富士山山体呈圆锥状，山顶终年积雪。富士山山麓周围，分布着五个淡水湖，统称“富士五湖”。</p>
+                        <p>富士山评为日本三灵山之一、日本百名山。被称作“芙蓉峰”或“富岳”以及“不二的高岭”。1936年2月，被指定为富士箱根伊豆国立公园。2013年6月，被第37届世界遗产委员会列入世界文化遗产名录“富士山-神圣之地和艺术启迪之源”。</p>
+                    </div>
+                </div>
+                <hr>
+                <h2 id="金三角">金三角</h2>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="thumbnail">
+                            <img src="../images/金三角3.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <p>“金三角”(Golden Triangle) 是指位于东南亚泰国、缅甸和老挝三国边境地区的一个三角形地带，因这一地区盛产鸦片等毒品、是世界上主要的毒品产地，而使“金三角”闻名于世。“金三角”的范围包括缅甸北部的掸邦、克钦邦、泰国的清莱府、清迈府北部及老挝的琅南塔省、丰沙里、乌多姆塞省，及琅勃拉邦省西部，共有大小村镇3000多个。总面积为19．4万平方公里。</p>
+                        <p>从清莱往北行40多公里，就到了著名的“金三角”。这里山青水绿，星星点点的红顶小屋错落其间，再加上经久不去的神秘气息，是许多游客来清莱的首选游览区。</p>
+                    </div>
+                </div>
+                <hr>
+				<hr>
+				<h2 id="美国大峡谷">美国大峡谷</h2>
+				<div class="row">
+				    <div class="col-lg-3">
+				        <div class="thumbnail">
+				            <img src="../images/美国大峡谷3.png">
+				        </div>
+				    </div>
+				    <div class="col-lg-9">
+				        <p>“美国大峡谷（Grand Canyon）是一个举世闻名的自然奇观，科罗拉多河穿流其中，它是联合国教科文组织选为受保护的天然遗产之一。大峡谷位于美国亚利桑那州西北部的凯巴布高原上，是地球上最为壮丽的景色之一。
+科罗拉多河在科罗拉多高原上共切割出19条主要峡谷，总面积为2724.7平方公里，其中最深、最宽、最长的一个就是大峡谷。它全长446公里，是世界上最长的峡谷之一。峡谷顶宽6至28公里，最深处1800米。谷底水面不足 1000米宽，夏季冰雪融水，水深增至18米。山石多为红色。</p>
+				        
+				    </div>
+				</div>
+				<hr>
+				<hr>
+				<h2 id="巴黎埃菲尔铁塔">巴黎埃菲尔铁塔</h2>
+				<div class="row">
+				    <div class="col-lg-3">
+				        <div class="thumbnail">
+				            <img src="../images/铁塔3.png">
+				        </div>
+				    </div>
+				    <div class="col-lg-9">
+				        <p>“法国巴黎埃菲尔铁塔位于法国巴黎战神广场，该塔于1889年建成，现为著名旅游景点。埃菲尔铁塔（法语：La Tour Eiffel）是一座镂空结构铁塔，高300米，天线高24米，总高324米。埃菲尔铁塔得名于设计它的桥梁工程师居斯塔夫·埃菲尔。</p>
+				        <p>铁塔设计新颖独特，是世界建筑史上的技术杰作，因而成为法国和巴黎的一个重要景点和突出标志。</p>
+				    </div>
+				</div>
+				<hr>
+				<hr>
+				<h2 id="尼亚加拉大瀑布">尼亚加拉大瀑布</h2>
+				<div class="row">
+				    <div class="col-lg-3">
+				        <div class="thumbnail">
+				            <img src="../images/尼亚加拉瀑布1.png">
+				        </div>
+				    </div>
+				    <div class="col-lg-9">
+				        <p>“举世闻名的尼亚加拉大瀑布(Niagara Falls)是世界七大奇景之一，位于加拿大和美国交界的尼亚加拉河上，它那丰沛而浩瀚的水汽和磅礴的气势，使所有前来观赏的游人都为之震撼。</p>
+				        <p>听其声如雷电轰鸣，观其势如排山倒海！无论在瀑布的湖盆底部或其心脏深处，还是伫立在巨大的约13层落差的马蹄形峭壁边缘喷雾之中，都会人感受到心灵在震颤。</p>
+				    </div>
+				</div>
+				<hr>
+				<hr>
+				<h2 id="东非大裂谷">东非大裂谷</h2>
+				<div class="row">
+				    <div class="col-lg-3">
+				        <div class="thumbnail">
+				            <img src="../images/美国大峡谷3.png">
+				        </div>
+				    </div>
+				    <div class="col-lg-9">
+				        <p>“东非大裂谷被称为地球伤痕，是世界上最大的断层陷落带。据说是由于三千万年前的地壳板块运动，非洲东部底层断裂形成，有关地理学家预言，未来非洲大陆将沿裂谷断裂成两个大陆板块。裂谷分东西两支，东支南起莫桑比克，向北穿越肯全境，一直延伸到西亚的约旦河岸。全长8700多公里(一说9600公里)，其中以肯尼亚境内的一段最具显著的地貌特征，在肯尼亚有三个吉祥数字：平均800公里长，80公里宽，800米深。
+肯尼亚是东非大裂谷的最佳观赏地点。东非大裂谷是世界大陆上最大的断裂带，从卫星照片上看去犹如一道巨大的伤疤。东非大裂谷素有“地球伤疤”之称。</p>
+				    </div>
+				</div>
+				<hr>
+				<hr>
+				<h2 id="塞纳河">塞纳河</h2>
+				<div class="row">
+				    <div class="col-lg-3">
+				        <div class="thumbnail">
+				            <img src="../images/塞纳河2.png">
+				        </div>
+				    </div>
+				    <div class="col-lg-9">
+				        <p>“塞纳河是法国最大河流之一，在巴黎市区河段长度约20公里。塞纳河横贯巴黎，人们通常把北岸称为“右岸”，把南岸称为“左岸”。现在，“左岸”已经不仅仅是一个地理名词，而成了艺术青年、波波族的注册商标。
+乘塞纳河的游船欣赏两岸，可以看到诸多名胜，如卢浮宫、大宫和小宫、奥赛博物馆、巴黎圣母院、艾菲尔铁塔等。塞纳河是法国北部大河，全长776.6公里，包括支流在内的流域总面积为78,700平方公里；它是欧洲有历史意义的大河之一，其排水网络的运输量占法国内河航运量的大部分。自中世纪初期以来，巴黎就是在该河一些主要渡口上建立起来的，河流与城市的相互依存关系是紧密而不可分离的。</p>
+				    </div>
+				<hr>
+            </div>
+
+</div>
+        </div>
+    </div></div>
+    <!-- 版权信息 -->
+    <div style="margin-top: 350px"></div>
+    <div class="row" style="color: #FFFFFF; background-color: #000000; padding-top: 50px; padding-bottom: 50px;">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4">
+            <h4>版权信息</h4>
+            <h4 style="">制作者:王旭珂,丁永浩,刘晴,苏亚雯</h4>
+        </div>
+        <div class="col-xs-4"></div>
+    </div>
+<script src="../bootstrap/jqueryui/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+

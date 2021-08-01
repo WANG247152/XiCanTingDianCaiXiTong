@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- 布局方式 -->
+		<style type="text/css">
+
+			.text1{
+			  margin-top: 70px;
+			  margin-bottom: 10px;
+			}
+			.text2{
+			  margin-top: 20px;
+			  margin-bottom: 20px;
+			  padding-top: 10px;
+			  padding-bottom: 10px;
+			}
+			.text3{
+			  margin-top: 20px;
+			  margin-bottom: 20px;
+			  padding-top: 10px;
+			  padding-bottom: 10px;
+			  background-image: url(../images/BeiJing.jpg);
+			}
+			.show-grid [class ^="col-md-"] {
+			  padding-top: 10px;
+			  padding-bottom: 10px;
+			}
+			.show-grid [class ^="col-md-8"] {
+			  padding-top: 20px;
+			  padding-bottom: 30px;
+			}
+			ul.nav-tabs{
+			    width: 250px;
+			    margin-top: 80px;
+			    border-radius: 4px;
+			    border: 1px solid #ddd;
+			    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+			}
+			ul.nav-tabs li{
+			    margin: 0;
+			    border-top: 1px solid #ddd;
+			}
+			ul.nav-tabs li:first-child{
+			    border-top: none;
+			}
+			ul.nav-tabs li a{
+			    margin: 0;
+			    padding: 15px 30px;
+			    border-radius: 0;
+			}
+			ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+			    color: #fff;
+			    background: #0088cc;
+			    border: 1px solid #0088cc;
+			}
+			ul.nav-tabs li:first-child a{
+			    border-radius: 4px 4px 0 0;
+			}
+			ul.nav-tabs li:last-child a{
+			    border-radius: 0 0 4px 4px;
+			}
+			ul.nav-tabs.affix{
+			    top: 50px; /* Set the top position of pinned element */
+			}
+
+		</style>
+		<style type="text/css">
+			body{background-color: #ffffff;
+				background-image:none ;
+				background-repeat:Repeat;
+				background-position: center;
+				background-attachment: scroll;}
+			h1{
+				text-align: center;
+				height: 0px;
+			}
+			.color{
+				background: #afdfe4;
+			}
+			h2 span{
+				float:left;
+				position: relative;
+			}
+
+			h2 span:nth-child(1){
+				-webkit-animation:jump 1s linear 0s infinite alternate;
+			}
+
+			h2 span:nth-child(2){
+				-webkit-animation:jump 1s linear 0.2s infinite alternate;
+			}
+
+			h2 span:nth-child(3){
+				-webkit-animation:jump 1s linear 0.4s infinite alternate;
+			}
+
+			h2 span:nth-child(4){
+				-webkit-animation:jump 1s linear 0.6s infinite alternate;
+			}
+
+			h2 span:nth-child(5){
+				-webkit-animation:jump 1s linear 0.8s infinite alternate;
+			}
+
+
+			@-webkit-keyframes jump
+			{
+				0%{
+					top:0px;
+					color:red;
+				}
+				50%{
+					top:-10px;
+					color:green;
+				}
+				100%{
+					top:10px;
+					color:blue;
+				}
+			}
+
+		</style>
+
+		<script src="../jquery-1.10.2/jquery.js"></script>
+
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>景区首页</title>
+		<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+
+
+<!--	afdfe4-->
+	<body>
+	<div class="container-fluid show-grid theme-showcase" role="main">
+		<!-- 导航栏 -->
+
+		  <div class="row">
+		  <div class="col-xs-12">
+			  <div class="bs-example" data-example-id="default-navbar">
+			    <nav class="navbar navbar-default navbar-fixed-top" style="background: #0f0f0f;">
+			      <div class="container-fluid">
+			        <!-- Brand and toggle get grouped for better mobile display -->
+			        <div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					    <span class="sr-only">切换导航</span>
+					    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+					  </button>
+						<a class="navbar-brand" href="../images/logo.png">
+							<span lang=EN-US style='font-size:42.0pt;font-family:"Bauhaus 93";mso-fareast-font-family:黑体;mso-bidi-font-family:"Bauhaus 93";color:#C00000'>F</span>
+							<span lang=EN-US style='font-size:26.0pt;font-family:"Showcard Gothic";mso-fareast-font-family:黑体;mso-bidi-font-family:"Showcard Gothic";color:#7030A0'>e</span>
+							<span lang=EN-US style='font-size:26.0pt;font-family:"Showcard Gothic";mso-fareast-font-family:黑体;mso-bidi-font-family:"Showcard Gothic";color:#00B050'>e</span>
+							<span lang=EN-US style='font-size:42.0pt;font-family:"Kristen ITC";mso-fareast-font-family:黑体;mso-bidi-font-family:"Kristen ITC";color:#0070C0'>l</span>
+						</a>
+			        </div>
+			        <!-- Collect the nav links, forms, and other content for toggling -->
+					  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			          <ul class="nav navbar-nav">
+			            <li class="active"><a href="../YeMian/ShouYe.html" data-toggle="tab">首页<span class="sr-only">(现在的)</span></a></li>
+			            <li><a href="../YeMian/GuoNei.html">国内</a></li>
+						  <li><a href="../YeMian/OuZhou.html">国外</a></li>						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">景区分类<span class="caret"></span></a>
+						  <ul class="dropdown-menu">
+						    <li><a href="#">AAAAA级</a></li>
+							<li><a href="#">AAAA级</a></li>
+							<li><a href="#">AAA级</a></li>
+						  </ul>
+						</li>
+			          </ul>
+			          <ul class="nav navbar-nav navbar-right">
+			            <li><a href="../YeMian/information.html">关于我们</a></li>
+						<li><a href="../YeMian/DengLu.html">登陆</a></li>
+						<li><a href="../YeMian/ZhuCe.html">注册</a></li>
+			          </ul>
+			        </div><!-- /.navbar-collapse -->
+			      </div><!-- /.container-fluid -->
+			    </nav>
+			  </div>
+		  </div>
+		</div>
+
+		<!-- 图片滚动 -->
+		<div class="row text1">
+		  <div class="col-xs-12" >
+			<div class="bs-example" data-example-id="carousel-with-captions" >
+			  <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+			    <ol class="carousel-indicators">
+			      <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
+			      <li data-target="#carousel-example-captions" data-slide-to="1"></li>
+			      <li data-target="#carousel-example-captions" data-slide-to="2"></li>
+			    </ol>
+			    <div class="carousel-inner" role="listbox">
+			      <div class="item active">
+			        <img src="../images/shouye.jpg" alt="第一张图">
+			        <div class="carousel-caption">
+						<h3>法国</h3>
+			          <p>普罗旺斯</p>
+			        </div>
+			      </div>
+			      <div class="item">
+			        <img src="../images/gundong2.jpg" alt="第二张图">
+			        <div class="carousel-caption">
+			          <h3>法国</h3>
+			          <p>巴黎铁塔</p>
+			        </div>
+			      </div>
+			      <div class="item">
+			        <img src="../images/富士山1.png" alt="第三张图">
+			        <div class="carousel-caption">
+			          <h3>日本</h3>
+			          <p>富士山</p>
+			        </div>
+			      </div>
+			    </div>
+			    <a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#carousel-example-captions" role="button" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+			  </div>
+			</div>
+		  </div>
+		  </div>
+		</div>
+
+	<h2>
+		<span>热</span>
+		<span>门</span>
+		<span>景</span>
+		<span>区</span>
+	</h2>
+		<div class="row text2 color">
+		  <div class="col-xs-12">
+
+			<div class="row">
+
+			  <div class="col-md-1"></div>
+
+				<!-- 景区图片 -->
+				<div class="col-md-4">
+					<div class="carousel-inner" role="listbox">
+						<a href="GuoNei.html#故宫"><img src="../images/GuGong.png" ></a>
+					</div>
+				</div>
+				<!-- 景区介绍 -->
+				<div class="col-md-7">
+					<p style="font-size: 125%;">
+						北京故宫于明成祖永乐四年（1406年）开始建设，以南京故宫为蓝本营建，到永乐十八年（1420年）建成，成为明清两朝二十四位皇帝的皇宫。北京故宫南北长961米，东西宽753米，四面围有高10米的城墙，城外有宽52米的护城河。紫禁城有四座城门，南面为午门，北面为神武门，东面为东华门，西面为西华门。城墙的四角，各有一座风姿绰约的角楼，民间有九梁十八柱七十二条脊之说，形容其结构的复杂。北京故宫是世界上现存规模最大、保存最为完整的木质结构古建筑之一，是国家AAAAA级旅游景区，1961年被列为第一批全国重点文物保护单位；1987年被列为世界文化遗产。
+					</p>
+				</div>
+			</div>
+			  <hr>
+			  <div class="row">
+				  <div class="col-md-1"></div>
+				  <!-- 景区介绍 -->
+				  <div class="col-md-7">
+					  <p style="font-size: 125%;">
+						  九寨沟：世界自然遗产、国家重点风景名胜区、国家AAAAA级旅游景区、国家级自然保护区、国家地质公园、世界生物圈保护区网络，是中国第一个以保护自然风景为主要目的的自然保护区。“九寨归来不看水”，是对九寨沟景色真实的诠释。泉、瀑、河、滩108个海子，构成一个个五彩斑斓的瑶池玉盆。长海、剑岩、诺日朗、树正、扎如、黑海六大景观，呈“Y”字形分布。翠海、叠瀑、彩林、雪峰、藏情、蓝冰，被称为“六绝”。神奇的九寨，被世人誉为“童话世界”，号称“水景之王”。
+					  </p>
+				  </div>
+				  <!-- 景区图片 -->
+				  <div class="col-md-4">
+					  <div class="carousel-inner" role="listbox">
+						  <a href="GuoNei.html#九寨沟"><img src="../images/JiuZhaiGou.jpg" ></a>
+					  </div>
+				  </div>
+			  </div>
+<hr>
+			  <div class="row">
+				  <div class="col-md-1"></div>
+			  <!-- 景区图片 -->
+				<div class="col-md-4" >
+							<div class="carousel-inner" role="listbox">
+								<a href="OuZhou.html#普罗斯旺"><img src="../images/PuLuo.jpg" alt="第一张图"></a>
+							</div>
+			  </div>
+
+
+				<!-- 景区介绍 -->
+				<div class="col-md-7">
+					<p style="font-size: 125%;">
+						普罗旺斯（Provence），位于法国东南部，是一个濒临地中海的蓝色海岸，薰衣草的故乡。该地出产优质的葡萄酒。普罗旺斯和意大利接壤，是从地中海沿岸延伸到内陆的丘陵地带。中间有大河隆河流过。从阿尔卑斯山经里昂南流的罗讷河，在普罗旺斯附近分为两大支流，然后注入地中海。普罗旺斯是世界闻名的薰衣草故乡，并出产优质葡萄酒。普罗旺斯还是欧洲的“骑士之城”，是中世纪重要文学体裁骑士抒情诗的发源地。
+					</p>
+				</div>
+			  </div>
+			  <hr>
+			  <div class="row">
+				  <div class="col-md-1"></div>
+
+				  <!-- 景区介绍 -->
+				<div class="col-md-7">
+					<p style="font-size: 125%;">
+						法国巴黎埃菲尔铁塔位于法国巴黎战神广场，该塔于1889年建成，现为著名旅游景点。埃菲尔铁塔（法语：La Tour Eiffel）是一座镂空结构铁塔，高300米，天线高24米，总高324米。埃菲尔铁塔得名于设计它的桥梁工程师居斯塔夫·埃菲尔。铁塔设计新颖独特，是世界建筑史上的技术杰作，因而成为法国和巴黎的一个重要景点和突出标志。
+					</p>
+				</div>
+			  <!-- 景区图片 -->
+			  <div class="col-md-4">
+				  <div class="carousel-inner" role="listbox">
+					  <img  src="../images/AiFeiEr.jpg" >
+				  </div>
+			  </div>
+
+			</div>
+			  <hr>
+			<div class="row">
+
+
+			</div>
+			<div class="row">
+				<div class="col-md-1"></div>
+			  <!-- 景区图片 -->
+			  <div class="col-md-4">
+				  <div class="carousel-inner" role="listbox">
+					  <a href="GuoNei.html#西湖"> <img src="../images/XiHu.jpg" ></a>
+				  </div>
+			  </div>
+				<!-- 景区介绍 -->
+				<div class="col-md-7" style="font-size: 125%;">
+					<p>
+						西湖，位于浙江省杭州市西湖区龙井路1号，杭州市区西部，景区总面积49平方公里，汇水面积为21.22平方公里，湖面面积为6.38平方公里。西湖南、西、北三面环山，湖中白堤、苏堤、杨公堤、赵公堤将湖面分割成若干水面。西湖的湖体轮廓呈近椭圆形，湖底部较为平坦，湖泊平均水深为2.27米，最深约5米，最浅不到1米。湖泊天然地表水源是金沙涧、龙泓涧、赤山涧（慧因涧）、长桥溪四条溪流。西湖有100多处公园景点，有“西湖十景”、“新西湖十景”、“三评西湖十景”之说，有60多处国家、省、市级重点文物保护单位和20多座博物馆，有断桥、雷峰塔、钱王祠、净慈寺、苏小小墓等景点。
+					</p>
+				</div>
+				<div class="col-md-1"></div>
+
+			</div>
+			  <hr>
+			<div class="row">
+			  <div class="col-xs-3">
+				<img src="../images/展示2.jpg" >
+			  </div>
+				<div class="col-xs-3">
+					<img src="../images/展示1.png" >
+				</div>
+
+				<div class="col-xs-3">
+					<img src="../images/展示4.png" >
+				</div>
+
+				<div class="col-xs-3">
+				<img src="../images/展示3.jpg" >
+			  </div>
+			</div>
+			
+		  </div>
+
+		</div>
+
+	<!-- 首页正文 -->
+	<div class="row text3" style="background: url(../images/塞纳河1.png);width: 100%;">
+		<div class="col-xs-3"></div>
+		<div class="col-xs-6" style="background: rgba(0,0,0,0.4); margin-top: 50px;">
+			<h3 style="color: rgb(182,161,43);">今日推荐</h3>
+			<div class="row">
+
+				<div class="col-xs-4">
+					<p style="font-size: 130%; color: #ffffff;">
+						塞纳河是法国最大河流之一，在巴黎市区河段长度约20公里。塞纳河横贯巴黎，人们通常把北岸称为“右岸”，把南岸称为“左岸”。乘塞纳河的游船欣赏两岸，可以看到诸多名胜，如卢浮宫、大宫和小宫、奥赛博物馆、巴黎圣母院、艾菲尔铁塔等。塞纳河是法国北部大河，全长776.6公里，包括支流在内的流域总面积为78,700平方公里；它是欧洲有历史意义的大河之一，其排水网络的运输量占法国内河航运量的大部分。
+					</p>
+				</div>
+				<div class="col-xs-8" style="margin-bottom: 20px;opacity: 0.95;filter: alpha(opacity=95);-moz-opacity: 0.95;z-index: 9.5">
+					<img src="../images/塞纳河2.png">
+				</div>
+			</div>
+
+		</div>
+		<div class="col-xs-3"></div>
+	</div>
+
+		<div class="row" style="margin-bottom: 50px;">
+		  <div class="col-xs-2"></div>
+		  <div class="col-xs-8">
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title" style="text-align: center;">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+								<font size="100%" color="#afdfe4">游</font>
+							</a>
+						</h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse">
+						<div class="item" >
+							<img src="../images/游1.jpg" alt="第二张图" align="left"><img src="../images/游2.jpg" alt="第二张图" align="right">
+						</div>
+						<div style="margin-top: 20px"></div>
+						<div class="item" >
+							<img src="../images/游3.jpg" alt="第二张图" ><img src="../images/游4.jpg" alt="第二张图" align="right">
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title" style="text-align: center;">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+								<font size="125%" color="#afdfe4">行</font>
+							</a>
+						</h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse">
+						<div class="item" >
+							<img src="../images/行1.jpg" alt="第二张图" align="left"><img src="../images/行2.jpg" alt="第二张图" align="right">
+						</div>
+						<div style="margin-top: 20px"></div>
+						<div class="item" >
+							<img src="../images/行3.png" alt="第二张图" ><img src="../images/行4.jpg" alt="第二张图" align="right">
+						</div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <div class="col-xs-2"></div>
+		</div>
+		
+		
+		<div class="row" style="margin-bottom: 50px;">
+		  <div class="col-xs-12">
+			<div class="row">
+				<div class="widget-wrap quick-edit " id="text_21_173" data-panels="Interaction" tabindex="-1"><div class="widget-container text_Style1 text_21_173_Style1_customcss"><!--mod-text-wrap-->
+					<div class="mod-text-wrap">
+
+						<!--mod-text-->
+						<div class="mod-text editable"><p style="text-align: center;" data-mce-style="text-align: center;">
+							<span style="font-family: 微软雅黑; font-size: 60px; color: rgb(175,223,228);" data-mce-style="font-family: 微软雅黑; font-size: 60px; color: #f2f2f2;">NEWS</span></p>
+							<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 2px;" data-mce-style="left: 0px; bottom: 2px;">
+								<div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;" data-mce-style="left: 0px; width: 0px;"></div>
+								<!--mod-text-->
+								<div class="mod-text editable"><p style="text-align: center;" data-mce-style="text-align: center;">
+									<span style="font-family: 微软雅黑; font-size: 24px; color: rgb(182,161,43);" data-mce-style="font-family: 微软雅黑; font-size: 24px; color: #1d1b10;">新闻资讯</span></p>
+									<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 2px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+									</div>
+								<!--/mod-text-->
+							</div>
+						</div>
+						<!--/mod-text-->
+						<div class="mod-text-wrap">
+							</div>
+							<!--/mod-text-wrap-->
+						</div>
+						</div>
+					<!--/mod-text-wrap-->
+				    </div>
+				</div>
+				</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="mod-list-wrap" data-listtype="">
+						<ul class="mod-list">
+
+							<li class="mod-list-item ">
+								<span class="mod-list-icon"></span><a href="404.html" target="_self"  title="额尔古纳:以旅游业带动经济向好发展" >额尔古纳:以旅游业带动经济向好发展</a>
+								<span class="mod-list-date" style="display: block">2020-10-26</span>
+							</li>
+							<li class="mod-list-item ">
+								<span class="mod-list-icon"></span><a href="404.html" target="_self"  title="多亏中国女游客 泰国旅游业渐摆脱&quot;有色&quot;形象" alt="多亏中国女游客 泰国旅游业渐摆脱&quot;有色&quot;形象">多亏中国女游客 泰国旅游业渐摆脱"有色"形象</a>
+								<span class="mod-list-date" style="display: block">2020-10-26</span>
+							</li>
+							<li class="mod-list-item ">
+								<span class="mod-list-icon"></span><a href="404.html" target="_self"  title="携程CEO孙洁:推动旅游业精准扶贫" alt="携程CEO孙洁:推动旅游业精准扶贫">携程CEO孙洁:推动旅游业精准扶贫</a>
+								<span class="mod-list-date" style="display: block">2020-10-26</span>
+							</li>
+							<li class="mod-list-item ">
+								<span class="mod-list-icon"></span><a href="404.html" target="_self"  title="青岛崂山区全面深化旅游业创新发展" alt="青岛崂山区全面深化旅游业创新发展">青岛崂山区全面深化旅游业创新发展</a>
+								<span class="mod-list-date" style="display: block">2020-10-26</span>
+							</li>
+							<li class="mod-list-item ">
+								<span class="mod-list-icon"></span><a href="404.html" target="_self"  title="中国工业旅游产业发展联合大会 10月26日在唐山召开" alt="中国工业旅游产业发展联合大会 10月26日在唐山召开">中国工业旅游产业发展联合大会 10月26日在唐山召开</a>
+								<span class="mod-list-date" style="display: block">2020-10-26</span>
+							</li>
+							<li class="mod-list-item ">
+								<span class="mod-list-icon"></span><a href="404.html" target="_self"  title="韩国旅游业遭遇重创,损失数十亿韩元,商场免税店无人问津" alt="韩国旅游业遭遇重创,损失数十亿韩元,商场免税店无人问津">韩国旅游业遭遇重创,损失数十亿韩元,商场免税店无人问津</a>
+								<span class="mod-list-date" style="display: block">2020-10-26</span>
+							</li>
+
+						</ul>
+						</div>
+
+					</div>
+				<div class="col-lg-6">
+					<!--mod-image-->
+					<span class="mod-image">
+            <div class="mod-image-img">
+					<img  src="../images/塞纳河3.png" height="330px">
+            </div>
+            <div class="mod-image-mark mark-hide">
+                <div class="mod-image-pack">
+					<div class="mod-image-icon mark-hide"><i class="fa"></i></div>
+<div class="mod-image-title "></div>
+                </div>
+            </div>
+        </span>    <!--/mod-image-->
+				</div>
+
+				</div>
+				<div class="widget-wrap  " >
+					<!--/mod-list-wrap-->
+				</div>
+				</div>
+				</div>
+
+		<!-- 版权信息 -->
+		<div class="row" style="color: #FFFFFF; background-color: #000000; padding-top: 50px; padding-bottom: 50px;">
+		  <div class="col-xs-4"></div>
+		  <div class="col-xs-4">
+			<h4>版权信息</h4>
+			<h4 style="">制作者:王旭珂,丁永浩,刘晴,苏亚雯</h4>
+		  </div>
+		  <div class="col-xs-4"></div>
+		</div>
+	  <script src="../bootstrap/jqueryui/jquery.js"></script>
+	  <!-- Include all compiled plugins (below), or include individual files as needed -->
+	  <script src="../bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
